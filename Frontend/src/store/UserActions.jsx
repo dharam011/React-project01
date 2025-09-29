@@ -4,7 +4,7 @@ import { loaduser } from "./UserSlice";
  const asyncgetUsers = () => async (dispatch , getState)=>{
 try{
 
-    console.log(getState());
+    console.log("current state>>>>",getState());
     
     const res = await axios.get("/users");
     
