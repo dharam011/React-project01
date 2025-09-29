@@ -1,18 +1,11 @@
-import axios from './Api/Axiosconfig';
+
 import React, { useEffect } from 'react'
+import asyncgetUsers from  "./store/UserActions"
 
 const App = () => {
-const getProducts = async () => {
-  try {
-    const response =await axios.get("/products");
-    
-    console.log(response);
-  } catch (error) {
-    console.error(error);
-  }
-};
+
 useEffect(() => {
-  getProducts();
+  asyncgetUsers();
 }, []);
 
   return (
