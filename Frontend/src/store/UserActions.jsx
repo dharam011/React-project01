@@ -1,15 +1,18 @@
 import axios from "../Api/Axiosconfig";
 import { loaduser } from "./UserSlice";
 
- const asyncgetUsers = async() =>{
+ const asyncgetUsers = () => async (dispatch , getState)=>{
 try{
-    const res =await axios.get("/users");
-    console.log(res);
+
+    console.log(getState());
     
+    const res = await axios.get("/users");
+    
+    dispatch(loaduser(res.data))
 }
 catch(error){
-    console.log(error);
-    loaduser(res.data)
+    console.log(error)
+    
     }
 
 }
