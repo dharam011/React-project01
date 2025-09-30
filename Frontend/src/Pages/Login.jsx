@@ -1,8 +1,10 @@
 import React from 'react'
 import {useForm} from "react-hook-form"
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
+
 
 const Login = () => {
+  const navigate = useNavigate()
    const {
     register,
     handleSubmit,
@@ -12,6 +14,7 @@ const Login = () => {
 
   const  loginHandeler = (data) => {
     console.log(data)
+    navigate("/products")
   }
   return (
     <div className='mt-20 items-center font-thin justify-center flex flex-col gap-10'> <h1
