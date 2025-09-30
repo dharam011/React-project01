@@ -2,6 +2,8 @@
 import React, { useEffect } from 'react'
 import asyncgetUsers from  "./store/UserActions"
 import { useDispatch, useSelector } from 'react-redux';
+import MainRoutes from './Routes/MainRoutes';
+import NavBar from './components/NavBar';
 
 
 
@@ -16,7 +18,10 @@ useEffect(() => {
 
   return (
 
-    <div>App</div>
+    <div className='App bg-gray-800 h-screen w-screen  text-white '>
+      <NavBar/>
+      <MainRoutes/>
+    </div>
   )
 }
 
