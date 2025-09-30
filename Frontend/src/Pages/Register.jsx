@@ -2,7 +2,7 @@ import { nanoid } from '@reduxjs/toolkit'
 import React from 'react'
 import{ useForm} from "react-hook-form"
 import { Link } from 'react-router-dom'
-import asyncgetUsers from '../store/UserActions'
+import  asyncRegisterUser  from '../store/actions/userActions'
 import { useDispatch } from 'react-redux'
 
 const Register = () => {
@@ -19,7 +19,7 @@ const Register = () => {
    user.id = nanoid()
     console.log(user)
     reset()
-    dispatch(asyncgetUsers(user))
+    dispatch(asyncRegisterUser(user))
     
   }
   return (
