@@ -1,12 +1,12 @@
 import { nanoid } from '@reduxjs/toolkit'
 import React from 'react'
 import{ useForm} from "react-hook-form"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import  asyncRegisterUser  from '../store/actions/userActions'
 import { useDispatch } from 'react-redux'
-
+ 
 const Register = () => {
-
+const Navigate = useNavigate()
     const dispatch = useDispatch()
    const {
     register,
@@ -17,9 +17,11 @@ const Register = () => {
 
   const  registerHandeler = (user) => {
    user.id = nanoid()
-    console.log(user)
+   user.isAdmin = false;
+    // console.log(user)
     reset()
     dispatch(asyncRegisterUser(user))
+    Navigate("/login")
     
   }
   return (
@@ -30,7 +32,7 @@ const Register = () => {
         <input className=' p-2 outline-0 border-b ' type="text" placeholder='Enter username' {...register("username",{required:true})} />
         <input className=' p-2 outline-0 border-b ' type="email" placeholder='enter your email' {...register("email",{required:true})}/>
         <input type="password" className=' p-2 outline-0 border-b ' placeholder='enter your password' {...register("password",{required:true})} />
-        <button className='bg-blue-400 p-4 rounded text-white font-thin' type='submit'>Register</button>
+        <button className='bg-blue-400  rounded text-white font-thin' type='submit'>Register</button>
       </form>
       <p>Already have an account ? <Link className='text-blue-400' to="/login">Login</Link></p>
     </div>

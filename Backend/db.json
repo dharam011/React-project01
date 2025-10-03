@@ -20,18 +20,40 @@
       "username": "johnd",
       "password": "m38rmF$"
     },
-    
     {
-      "id": "_vV1R-Igdz6T_bT3hvzFw",
+      "id": "RuXtpVAOvwgGGltkurqgH",
       "username": "Dharam.011",
       "email": "dharam801799@gmail.com",
-      "password": "123456"
+      "password": "123456789",
+      "isAdmin": false
     },
     {
-      "id": "V8ytBfJEtJoJbe1FmJ9-s",
-      "username": "Dharam.011",
+      "id": "qQnQzUbg-uj9nMNjyzt4D",
+      "username": "haram",
       "email": "dharam801799@gmail.com",
-      "password": "123456789"
+      "password": "789456123",
+      "isAdmin": false
+    },
+    {
+      "id": "lfKNZyyzfdvuyma3ai7-N",
+      "username": "dharam.001",
+      "email": "dharam801799@gmail.com",
+      "password": "123456789",
+      "isAdmin": false
+    },
+    {
+      "id": "wVBY1j0l9uNIPR0tlEndk",
+      "username": "dharam.001",
+      "email": "dharam917700@gmail.com",
+      "password": "987654321",
+      "isAdmin": false
+    },
+    {
+      "id": "Y0c9wWHU8T1x9OaqGYQWY",
+      "username": "adipurush123",
+      "email": "aadi@gmail.com",
+      "password": "qwertyuiop",
+      "isAdmin": false
     }
   ],
   "cart": [
