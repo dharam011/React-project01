@@ -1,4 +1,5 @@
 import axios from "../../Api/Axiosconfig";
+import { loaduser } from "../UserSlice";
 
 export const asyncCurrentUser = (user) => async (dispatch, getState) =>{
 try { 
