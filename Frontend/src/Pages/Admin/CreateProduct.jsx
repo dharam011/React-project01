@@ -1,19 +1,25 @@
+import { nanoid } from '@reduxjs/toolkit'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { useDispatch } from 'react-redux'
 import { Navigate, useNavigate } from 'react-router-dom'
+import { asyncCreateProduct } from '../../store/actions/userActions'
 
 const CreateProduct = () => {
     const Navigate = useNavigate()
+    const dispatch = useDispatch();
     const {
         register,
         handleSubmit,
         reset,
         formState: { errors },
     }=useForm()
-    const createProductHandeler = (data) => {
-        console.log(data)
+    const createProductHandeler = (product) => {
+        product.id = nanoid()
+        console.log(product)
         Navigate("/products")
         reset()
+        dispatch(asyncCreateProduct(product))
     }
   return (
     <div className='flex flex-col  text-center justify-center items-center gap-10'>
@@ -24,7 +30,7 @@ const CreateProduct = () => {
         }`} type="text" placeholder={errors.title? errors.title.message : "Enter the product name "} />
             
             <input {...register("price",{required:true})} className='border-b outline-0 p-2 mb-2' type="number" placeholder='price' />
-            <input {...register("description")} className='border-b outline-0 p-2 mb-2' type="textarea" placeholder='description' />
+            <textarea {...register("description")} className='border-b outline-0 p-2 mb-2 w-full' placeholder='description' />
             <input {...register("category")} className='border-b outline-0 p-2 mb-2' type="text" placeholder='category' />
             <input {...register("image",{required:true})} className='border-b outline-0 p-2 mb-2' type="url" placeholder='image url' />
             <button className='bg-blue-400 text-xl px-4 py-2 rounded-lg' type='submit'>Save product</button>

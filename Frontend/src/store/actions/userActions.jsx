@@ -51,6 +51,11 @@ catch(error){
 }
 }
 export default asyncRegisterUser;
+export const asyncCreateProduct = (product) => async (dispatch, getState) =>{
+    const response = await axios.post("/products",product)
+    console.log(response.data);
+}
+
 
 // import axios from "../Api/Axiosconfig";
 // import { loaduser } from "./UserSlice";

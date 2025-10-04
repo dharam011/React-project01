@@ -7,8 +7,55 @@
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       "category": "men's clothing",
       "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
-      
-    }
+    },
+    {
+      "id": "0egzYptM7AJUsvSYHaT1L",
+      "title": "new 1",
+      "price": "789",
+      "description": "dusra",
+      "category": "Smart India Hackathon",
+      "image": "https://plus.unsplash.com/premium_photo-1723478417559-2349252a3dda?q=80&w=1066&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+     {
+    "id": "p1",
+    "title": "Apple MacBook Air M2",
+    "price": "1149",
+    "description": "Powerful and lightweight laptop with Apple M2 chip, ideal for work and study.",
+    "category": "Electronics",
+    "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-m2-hero-202206?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1653493200207"
+  },
+  {
+    "id": "p2",
+    "title": "Nike Air Force 1 '07",
+    "price": "120",
+    "description": "Classic all-white sneakers with durable leather and timeless street style.",
+    "category": "Footwear",
+    "image": "https://images.unsplash.com/photo-1600180758890-6c2a43b6e96b?q=80&w=1080&auto=format&fit=crop"
+  },
+  {
+    "id": "p3",
+    "title": "Sony WH-1000XM5",
+    "price": "399",
+    "description": "Premium wireless noise-cancelling headphones with adaptive sound control.",
+    "category": "Audio",
+    "image": "https://images.unsplash.com/photo-1621605815971-280f09b5ecca?q=80&w=1080&auto=format&fit=crop"
+  },
+  {
+    "id": "p4",
+    "title": "Fossil Gen 6 Smartwatch",
+    "price": "299",
+    "description": "Stylish smartwatch with heart rate monitor, GPS, and Google Wear OS support.",
+    "category": "Smart Devices",
+    "image": "https://images.unsplash.com/photo-1601968177507-a5e8f1f57c0e?q=80&w=1080&auto=format&fit=crop"
+  },
+  {
+    "id": "p5",
+    "title": "IKEA Markus Office Chair",
+    "price": "229",
+    "description": "Ergonomic mesh office chair designed for long hours of comfort and productivity.",
+    "category": "Furniture",
+    "image": "https://images.unsplash.com/photo-1616627456270-fb9e3c51b1c8?q=80&w=1080&auto=format&fit=crop"
+  }
   ],
   "users": [
     {
